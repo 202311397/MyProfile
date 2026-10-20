@@ -1,0 +1,13 @@
+{
+  "config": "hugo.yaml,pages.json",
+  "theme": "template",
+  "sample": "exampleSite",
+  "version": "0.167.0",
+  "slug": "localcraft",
+  "npm": [],
+  "asset_build": [],
+  "generator": "3.1",
+  "repo": "https://github.com/202311397/MyProfile.git",
+  "baseURL": "https://202311397.github.io/MyProfile/",
+  "audited": true
+}
