@@ -48,6 +48,50 @@ languages:
         - name: "학습 기록"
           pageRef: /blog
           weight: 3
+  en:
+    label: English
+    locale: en-US
+    contentDir: content/en
+    title: "Kang mina Portfolio"      
+    weight: 2
+    params:
+      logo:
+        name: "Kang mina"              
+        dot: true
+      error_404:
+        title: "Page Not Found"
+        description: "The page you are looking for does not exist or has moved. Go back to the homepage or use the links below."
+        show_search: false
+        show_links: true
+        show_recent_posts: false
+      footer:
+        description: "A personal portfolio of what I learn and build"   # ★
+        columns:
+          - title: "Quick Links"
+            links:
+              - name: "About"
+                url: "https://202311397.github.io/MyProfile/en/about/"
+              - name: "Activities"
+                url: "https://202311397.github.io/MyProfile/en/gallery/"
+              - name: "Learning Log"
+                url: "https://202311397.github.io/MyProfile/en/blog/"
+          - title: "Links"
+            links:
+              - name: "GitHub"
+                url: "https://github.com/202311397"   # ★
+                external: true
+        show_credit: true
+    menu:
+      main:
+        - name: "About"
+          pageRef: /about
+          weight: 1
+        - name: "Activities"
+          pageRef: /gallery
+          weight: 2
+        - name: "Learning"
+          pageRef: /blog
+          weight: 3
 
 module:
   imports:
