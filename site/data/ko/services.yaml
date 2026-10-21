@@ -1,14 +1,16 @@
-- name: "Haircut"
-  description: "Professional grooming tailored to breed and coat type. Styling, trimming, and shaping."
-  price: "from 80 PLN"
-  icon: "scissors"
+# 홈 화면 "관심 분야" 카드
+- name: "품질관리"
+  description: "공정의 문제를 데이터로 찾아내고 개선하는 과정에 관심을 갖게 되었습니다."
+  price: "통계적 품질관리 · 공정 개선"
+  icon: "shield"
 
-- name: "Bath & Care"
-  description: "Bath with professional products, drying and brushing. A perfectly fresh pup."
-  price: "from 50 PLN"
-  icon: "droplet"
+- name: "데이터 관리"
+  description: "품질을 개선하려면 먼저 데이터가 정확하게 쌓이고 정리되어야 한다는 점에서 관심이 생겼습니다."
+  price: "데이터베이스 · 데이터 정리"
+  icon: "certificate"
 
-- name: "Hand Stripping"
-  description: "Hand stripping for wire-haired breeds. We preserve the natural coat texture."
-  price: "from 120 PLN"
-  icon: "hand"
+- name: "웹 개발"
+  description: "컴퓨터공학을 복수전공하며 배운 것을 눈에 보이는 결과물로 만들고 싶어 웹 개발을 시작했고, 이 포트폴리오 사이트를 직접 배포했습니다."
+  price: "HTML · CSS · Hugo · Git"
+  icon: "star"
+  
