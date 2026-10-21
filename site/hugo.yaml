@@ -8,7 +8,7 @@ languages:
     label: 한국어
     locale: ko-KR
     contentDir: content/ko
-    title: "강민아 포트폴리오"           
+    title: "강민아 protfolio"           
     weight: 1
     params:
       logo:
