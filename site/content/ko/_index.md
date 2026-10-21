@@ -1,63 +1,34 @@
 ---
-title: "Snip Snip – Pet Grooming Salon"
-description: "Professional dog grooming in the heart of Warsaw. Haircuts, baths, hand stripping and more."
+title: "강민아 포트폴리오"
+description: "산업정보시스템공학과 · 컴퓨터공학 복수전공 강민아의 포트폴리오"
 
 sections:
   - type: hero
     enabled: true
-    eyebrow: "Grooming salon in Warsaw"
-    heading: "Your dog deserves the best care"
-    heading_italic: "best"
-    description: "Professional grooming, baths and care treatments in a friendly atmosphere. Passionate about pets since 2018."
+    eyebrow: "산업정보시스템공학과 · 컴퓨터공학 복수전공"
+    heading: "안녕하세요, 강민아입니다"
+    heading_italic: "강민아"
+    description: "품질과 데이터를 다루는 산업공학의 시선에 컴퓨터공학의 개발 역량을 더해, 문제를 직접 시스템으로 풀어내는 사람이 되고자 합니다."
     cta_primary:
-      text: "Book a visit"
-      url: "/en/location/"
+      text: "소개 보기"
+      url: "/about/"
     cta_secondary:
-      text: "View pricing"
-      url: "/en/pricing/"
-    image: "/images/hero-dog.jpg"
-    stats:
-      - value: "2000+"
-        label: "happy pups"
-      - value: "5.0"
-        label: "Google rating"
+      text: "활동 보기"
+      url: "/gallery/"
+    image: "/images/profile.jpg"
 
   - type: services
     enabled: true
-    label: "Our services"
-    heading: "Comprehensive care for your furry friend"
-    description: "We offer a full range of grooming services tailored to every breed's needs."
-
-  - type: before-after
-    enabled: true
-    label: "Transformations"
-    heading: "See our work in action"
-    description: "Gallery of our furry clients' makeovers."
-    cta:
-      text: "See more"
-      url: "/en/gallery/"
-    limit: 3
-
-  - type: testimonials
-    enabled: true
-    label: "Client reviews"
-    heading: "What pet owners say about us"
-    description: "Over 2000 clients have trusted us with their pets."
+    label: "관심 분야"
+    heading: "요즘 배우고 있는 것"
+    description: "두 전공을 공부하며 이어지는 세 가지 분야에 관심을 두고 있습니다."
 
   - type: blog-preview
     enabled: true
-    label: "Blog"
-    heading: "Tips for dog owners"
-    description: "Practical advice on grooming and caring for your pet."
+    label: "학습 기록"
+    heading: "최근 기록"
     limit: 3
     cta:
-      text: "All articles"
-      url: "/en/blog/"
-
-  - type: cta-banner
-    enabled: true
-    heading: "Ready for a visit?"
-    description: "Call us and book an appointment that suits you."
-    cta:
-      text: "Call now"
+      text: "전체 기록 보기"
+      url: "/blog/"
 ---
