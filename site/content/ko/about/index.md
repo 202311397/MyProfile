@@ -1,68 +1,43 @@
----
-title: "About Us"
-description: "We are a team of enthusiasts for whom grooming is not just a job — it's a calling. Since 2015, we've been caring for pets across Warsaw, combining professionalism with a warm, family-like approach."
-eyebrow: "Get to know us"
+title: "소개"
+description: "산업정보시스템공학과 · 컴퓨터공학 복수전공 강민아입니다. 데이터를 정확하게 관리하고, 그 데이터로 금융과 기업의 판단을 돕는 일에 관심이 있습니다."
+eyebrow: "About me"
 type: "about"
 layout: "single"
 
 sections:
   - type: about-content
     enabled: true
-    label: "Our story"
-    heading: "Over 8 years of experience"
 
   - type: about-values
     enabled: true
-    label: "Our values"
-    heading: "What matters most to us"
-
-  - type: about-team
-    enabled: true
-    label: "Our team"
-    heading: "Meet our groomers"
-
-  - type: certificates
-    enabled: true
-    label: "Certificates"
-    heading: "Our Awards & Certifications"
-    description: "Proof of our service quality"
-    limit: 6
+    label: "학습 목표"
+    heading: "앞으로 할 것"
 ---
 
-## Our story
+## 관심 분야
 
-It all started in 2015 when we combined our years-long passion for animals with a professional approach to grooming. Over these years, we have grown from a small, intimate salon to one of the most recognizable brands in Warsaw. We serve hundreds of satisfied customers every month, and our team continues to expand.
+### 데이터 관리
 
-![Grooming salon](images/hero-dog.jpg)
+산업공학 수업에서 생산계획, 재고관리, MRP를 배우면서 기업의 여러 업무가 데이터로 연결되어 있다는 걸 알게 됐습니다. ERP 실습에서 회사와 사업장 정보를 직접 등록해 보니 시스템에 들어간 정보가 이후 모든 업무의 기준이 된다는 게 실감 났습니다.
 
-Our salon is a space designed with maximum comfort for both pets and their owners in mind. Top-class equipment, carefully selected cosmetics, and a friendly, homely atmosphere ensure that every visit is a pleasant experience for everyone. We pay attention to every detail – from a comfortable waiting area to modern grooming stations.
+예를 들어 ERP에는 재고가 100개인데 실제 창고에는 80개만 있다면 생산계획도 납기 안내도 전부 틀어집니다. 그래서 분석보다 먼저 데이터를 정확하게 쌓고 관리하는 일에 관심을 갖게 됐습니다.
 
-## Our work philosophy
+### 데이터 품질
 
-We believe that every pet is an individual who deserves special treatment. For us, no two dogs are the same – each has their unique character, needs, and temperament. That's why before each treatment, we take time for a detailed consultation with the owner and getting to know the four-legged friend.
+컴퓨터공학 복수전공으로 데이터베이스와 SQL을 배우면서, 데이터가 많다고 해서 좋은 결과가 나오는 건 아니라는 걸 알게 됐습니다. 같은 고객이 두 번 등록되어 있거나, 날짜 형식이 제각각이거나, 금액이 빠져 있으면 분석 결과 자체가 틀어집니다. 그래서 데이터가 정확한지, 빠진 게 없는지, 같은 기준으로 기록됐는지, 중복은 없는지를 확인하는 과정이 중요하다고 생각합니다. 기본키, 외래키, 정규화를 공부하면서 이런 문제를 애초에 막는 방법에도 관심이 생겼습니다.
 
-Our goal is not just to perform grooming or bathing, but to create a positive experience that will make a visit to the groomer no longer stressful, but become a pleasant ritual. Many of our regular clients say that their dogs actually look forward to their next visit!
+### 금융
 
-### Professionalism in every detail
+공학회계 수업에서 재무상태표와 손익계산서를 읽는 법을 배우면서 기업의 활동이 결국 숫자로 정리되어 재무제표에 남는다는 걸 알게 됐습니다.
+매출, 영업이익, 부채 같은 숫자 하나하나가 기업을 판단하는 근거가 된다는 점이 흥미로웠습니다.
 
-We set the highest standards in the grooming industry:
+수업이 끝난 뒤에는 DART에서 실제 기업의 재무제표를 찾아보며 배운 항목을 직접 확인해 봤습니다. 동시에 이 숫자들이 하나라도 잘못 기록되면 판단 전체가 틀어질 수 있습니다.
+데이터 관리와 품질이 금융에서 특히 중요하다고 느꼈습니다. 진로를 찾아보면서 금융기관과 공공기관의 정보처리 업무에도 관심을 넓히고 있습니다.
 
-- Certified groomers with years of documented experience
-- Regular participation in training and industry conferences
-- Highest quality cosmetics selected individually for coat type
-- Professional tools and equipment regularly serviced
-- Adherence to rigorous hygiene and disinfection standards
+## 써 본 도구
 
-### Safety above all
-
-The safety and well-being of your pets is our absolute priority. Each treatment is conducted with full responsibility and care. We use only gentle, proven techniques that minimize the animal's stress.
-
-Throughout the entire procedure, we carefully observe the dog's behavior and adjust the pace of work to their needs. If we notice that the pet is stressed, we take breaks. In our salon, there is no rush – quality and the animal's comfort are what matters.
-
-![Professional grooming equipment](images/blog/nails.jpg)
-
-## Trust built over years
-
-Through years of consistent, reliable work, we have built a reputation as a salon that not only professionally grooms but above all genuinely cares for animals. For us, every dog is not just another number, but an important member of someone's family who deserves the best care.
-
-Our commitment, individual approach, and authentic love for animals mean that clients come back to us for years, often bringing subsequent generations of their pets. The best reward for us are recommendations from satisfied owners who refer us to their friends and family. It's thanks to them that we can grow and help an increasing number of four-legged friends look and feel great.
+- **더존 iCUBE ERP**: 수업 실습에서 회사를 만들고 사업장 정보를 등록했습니다. 학교 PC와 개인 PC 사이에서 회사 데이터를 옮기고 백업하는 문제를 해결해 보려고 시도하기도 했습니다.
+- **SQL · 데이터베이스**: 수업에서 SELECT, WHERE, GROUP BY, JOIN으로 데이터를 조회하고 테이블 관계와 정규화를 공부했습니다.
+- **DART · Company Guide · ALIO**: 기업의 매출, 영업이익, 재무비율과 공공기관 경영정보를 찾아봤습니다. 앞으로 적극적으로 프로젝트에 활용할 것 입니다. 
+- **Git · Hugo · GitHub Actions**: 이 사이트를 직접 수정하고 배포했습니다. 커밋을 작업 단위로 나누고, push 후 자동 배포 결과를 확인하며 고쳤습니다.
+EOF
