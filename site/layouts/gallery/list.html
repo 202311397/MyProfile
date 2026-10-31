@@ -1,0 +1,28 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container">
+    <header class="section-header">
+      {{ with .Params.label }}<span class="section-label">{{ . }}</span>{{ end }}
+      <h1 class="section-heading">{{ .Title }}</h1>
+      {{ with .Params.description }}<p class="section-sub">{{ . }}</p>{{ end }}
+    </header>
+
+    {{ with .Pages.ByDate.Reverse }}
+    <ul class="activity-list">
+      {{ range . }}
+      <li class="activity-card card">
+        <p class="activity-card__meta">
+          {{ with .Params.period }}<span>{{ . }}</span>{{ end }}
+          {{ with .Params.status }}<span class="activity-card__status">{{ . }}</span>{{ end }}
+        </p>
+        <h2 class="activity-card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        {{ with .Description }}<p class="activity-card__desc">{{ . }}</p>{{ end }}
+      </li>
+      {{ end }}
+    </ul>
+    {{ else }}
+      <p class="section-sub">{{ .Params.empty_message }}</p>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
