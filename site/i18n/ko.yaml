@@ -1,58 +1,51 @@
 # General
+home: "홈"
+nav_home: "홈"
+nav_blog: "학습 기록"
 footer_copyright: "All rights reserved."
-before: "Before"
-after: "After"
-all: "All"
-close: "Close"
-previous: "Previous"
-lightbox_label: "Image lightbox"
-main_navigation: "Main navigation"
-language_switch: "Language switch"
+powered_by: "제작도구: "
+before: "이전"
+after: "이후"
+all: "전체"
+close: "닫기"
+previous: "이전"
+lightbox_label: "이미지 크게 보기"
+main_navigation: "주 메뉴"
+language_switch: "언어 선택"
 
 # About
-about_us: "About Us"
-our_values: "Our Values"
-values_heading: "Why Choose Us?"
-our_team: "Our Team"
-team_heading: "Meet the Team"
+about_us: "소개"
+our_values: "학습 목표"
+values_heading: "앞으로 할 것"
 
 # Blog
-blog: "Blog"
-read_more: "Read more"
-min_read: "min read"
-back_to_blog: "Back to blog"
-related_posts: "Related posts"
-no_posts: "No posts yet."
-prev: "Previous"
-next: "Next"
-pagination: "Pagination"
+blog: "학습 기록"
+read_more: "더 읽기"
+min_read: "분 분량"
+back_to_blog: "학습 기록 목록으로"
+related_posts: "관련 글"
+no_posts: "아직 작성한 글이 없습니다."
+prev: "이전"
+next: "다음"
+pagination: "페이지 이동"
+post: "개 글"
+posts: "개 글"
 
-# Testimonials
-stars_of_5: "out of 5 stars"
+# 태그·분류
+tags: "태그"
+categories: "분류"
+no_terms: "아직 등록된 항목이 없습니다."
+back_to: "돌아가기:"
 
-# Pricing
-filter_by_category: "Filter by category"
-service: "Service"
-service_info: "Info"
-price: "Price"
+# 첫 화면
+years_of_experience:
+  one: "년"
+  other: "년"
 
-# Gallery
-ba_slider_label: "Before and after comparison. Drag the slider to compare."
-ba_handle_label: "Comparison slider"
 
-# FAQ
-faq: "FAQ"
-faq_heading: "Frequently Asked Questions"
-
-# Location
-location: "Location"
-address: "Address"
-contact: "Contact"
-opening_hours: "Opening Hours"
-our_place: "Our Place"
-closed: "Closed"
-open_in_google_maps: "Open in Google Maps"
-map_aria_label: "Map showing salon location"
-status_open: "Open now"
-status_closed: "Closed now"
-status_closing_soon: "Closing soon"
+# 404 페이지
+404_title: "페이지를 찾을 수 없습니다"
+404_description: "주소가 바뀌었거나 존재하지 않는 페이지입니다. 홈으로 돌아가거나 아래 링크를 이용해 주세요."
+404_home_button: "홈으로 가기"
+404_helpful_links: "바로가기"
+404_recent_posts: "최근 글"
