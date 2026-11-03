@@ -1,11 +1,19 @@
 - title: "지금 준비 중"
-  description: "ERP 생산·물류 자격증을 준비하고 있으며 수업에서 배운 생산계획과 재고관리가 실제 ERP에서 어떻게 처리되는지 익히고 있습니다."
+  description: |-
+    · ERP 생산·물류 자격증
+    · 포트폴리오 사이트 제작
   icon: "star"
 
 - title: "다음 할 일"
-  description: 회계,금융 관련 자격증을 따고 공학회계에서 배운 재무제표를 직접 작성하고 처리할 수 있는 수준까지 공부할 계획입니다."
+  description: |-
+    · 회계·금융 자격증 취득
+    · 재무제표 작성·분석
+    · Excel·Tableau 데이터 시각화
   icon: "leaf"
 
 - title: "계속할 것"
-  description: "Hugo와 GitHub로 나만의 포트폴리오 사이트를 계속 개선할 것입니다. 공부한 내용을 학습 기록으로 꾸준히 남기겠습니다."
+  description: |-
+    · 재무·품질 데이터 분석 프로젝트
+    · HTML·CSS·JavaScript 학습
+    · 분석 결과를 보여 주는 웹 서비스 제작
   icon: "certificate"

@@ -6,3 +6,9 @@
 .activity-card__title a { color: inherit; text-decoration: none; }
 .activity-card__title a:hover, .activity-card__title a:focus-visible { text-decoration: underline; }
 .activity-card__desc { margin: 0; }
+
+/* 학습 계획 목표 카드: 왼쪽 정렬 */
+.about-values__description {
+white-space: pre-line;
+text-align: left;
+}
