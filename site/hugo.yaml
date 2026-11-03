@@ -34,9 +34,11 @@ languages:
           - title: "링크"
             links:
               - name: "GitHub"
-                url: "https://github.com/202311397"   # ★ 실제 GitHub 아이디 확인
+                url: "https://github.com/202311397"   
                 external: true
-        show_credit: true          # 테마 제작자 표기 유지 (P58)
+              - name: "연락처"
+                url: "https://202311397.github.io/MyProfile/contact/"
+        show_credit: true          
     menu:
       main:
         - name: "소개"
@@ -48,7 +50,10 @@ languages:
         - name: "학습 기록"
           pageRef: /blog
           weight: 3
-          
+        - name: "연락처"
+          pageRef: /contact
+          weight: 4
+
 module:
   imports:
     - path: github.com/maciejkosiarski/localcraft
