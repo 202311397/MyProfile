@@ -1,22 +1,46 @@
 ---
-title: "포트폴리오 사이트 만들기"
-description: "Hugo 테마를 내 사이트로 바꾸고 GitHub로 배포했습니다."
-date: 2026-10-20
-period: "2026.10 ~"
-status: "진행 중"
+title: "Vue 프로젝트 배포: 수동 빌드와 자동 배포"
+description: "같은 Vue 프로젝트를 직접 빌드해 올리는 방식과 GitHub Actions 자동 배포 방식으로 각각 배포했습니다."
+date: 2026-10-01
+period: "2026.10"
+status: "완료"
 ---
 
-## 기간
+## 활동 시기와 진행 상태
 
-2026년 10월 ~ 진행 중 (초급프로젝트 과제, 개인 작업)
+2026년 10월 · 개인 과제 · 완료
 
-## 목적
+## 활동 목적
 
-## 한 일
+Vue로 만든 영화 정보 프로젝트를 GitHub Pages를 통해 배포해 보았습니다. 직접 빌드해서 배포하는 방법과 GitHub Actions를 이용하는 방법을 각각 실습하고 두 방식의 차이를 알아보고자 했습니다.
 
-## 결과물
+## 본인 역할과 기여 범위
 
-- 사이트: [202311397.github.io/MyProfile](https://202311397.github.io/MyProfile/)
-- 저장소: [github.com/202311397/MyProfile](https://github.com/202311397/MyProfile)
+개인 과제로 진행했으며 Vue 프로젝트의 빌드와 GitHub 저장소 설정, GitHub Pages 및 Actions 배포 설정을 직접 진행했습니다.
 
-## 배운 점
+## 수행 과정과 선택 이유
+
+**① 수동 빌드 후 배포**
+
+- `npm run build` 명령어를 실행해 Vue 프로젝트의 빌드 결과물인 `dist` 폴더를 생성했습니다.
+- 빌드된 정적 파일을 GitHub Pages에서 제공하도록 설정했습니다.
+- 직접 빌드하고 배포하는 과정을 통해 Vue 프로젝트가 실제 웹페이지로 실행되는 과정을 확인했습니다.
+
+**② GitHub Actions 자동 배포**
+
+- Vue 프로젝트의 소스 코드를 GitHub 저장소에 올렸습니다.
+- GitHub Actions를 이용해 코드를 push하면 자동으로 빌드하고 GitHub Pages에 배포하도록 설정했습니다.
+- 수동으로 빌드하는 과정과 비교하면서 자동 배포가 어떻게 진행되는지 확인했습니다.
+
+## 산출물과 결과 설명
+
+| 배포 방식 | 사이트 | 저장소 |
+|---|---|---|
+| 수동 빌드 | [movie-lab](https://202311397.github.io/movie-lab/) | [GitHub](https://github.com/202311397/movie-lab) |
+| Actions 자동 배포 | [movie-lab-2](https://202311397.github.io/movie-lab-2/) | [GitHub](https://github.com/202311397/movie-lab-2) |
+
+## 학습 결과와 개선 방향
+
+- **배운 점**: 수동 배포는 직접 빌드하고 결과물을 올려야 하지만, GitHub Actions를 사용하면 코드를 push할 때 자동으로 빌드와 배포가 진행된다는 차이를 알게 되었습니다.
+- **어려웠던 점**: 배포 후 화면이 제대로 나오지 않는 문제가 있었습니다. Vite의 `base` 경로가 GitHub 저장소 이름과 맞지 않아 발생하는 문제였고 경로 설정을 수정하면서 해결 방법을 익혔습니다.
+- **개선 방향**: 앞으로는 배포 설정을 더 정확하게 관리하고 프로젝트의 기능을 추가해 완성도를 높이고 싶습니다.
