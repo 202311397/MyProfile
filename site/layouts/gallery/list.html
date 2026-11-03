@@ -7,7 +7,7 @@
       {{ with .Params.description }}<p class="section-sub">{{ . }}</p>{{ end }}
     </header>
 
-    {{ with .Pages.ByDate.Reverse }}
+    {{ with .Pages.ByDate }}
     <ul class="activity-list">
       {{ range . }}
       <li class="activity-card card">
