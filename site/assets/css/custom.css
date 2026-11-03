@@ -12,3 +12,44 @@
 white-space: pre-line;
 text-align: left;
 }
+
+
+/* 학습역량 표 디자인 */
+.prose table {
+width: 100%;
+border-collapse: collapse;
+margin: 1.5rem 0;
+font-size: .95rem;
+}
+.prose th,
+.prose td {
+padding: .75rem 1rem;
+border-bottom: 1px solid #e2ddd3;
+text-align: left;
+vertical-align: top;
+}
+.prose thead th {
+background: var(--green-pale, #e8f0ea);
+color: var(--green, #3b5c45);
+font-weight: 600;
+border-bottom: 2px solid var(--green, #3b5c45);
+}
+.prose td:first-child {
+font-weight: 600;
+white-space: nowrap;
+}
+.prose tbody tr:hover {
+background: #faf7f0;
+}
+
+/* 휴대폰 화면: 글자와 여백 줄이기 */
+@media (max-width: 600px) {
+.prose th,
+.prose td {
+    padding: .6rem .5rem;
+    font-size: .875rem;
+}
+.prose td:first-child {
+    white-space: normal;
+}
+}
