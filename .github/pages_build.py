@@ -603,6 +603,10 @@ def fix_public_paths(public, base):
         if parsed.netloc != host or parsed.scheme not in ('http', 'https'):
             return value, None
         path = urllib.parse.unquote(parsed.path)
+                # 같은 계정의 다른 저장소 사이트로 가는 전체 주소 링크는 바꾸지 않음.
+        if prefix and value.startswith(('http://', 'https://')) and not (path == prefix or path.startswith(prefix + '/')):
+            return value, None
+        rel = path[len(prefix) + 1:] if prefix and path.startswith(prefix + '/') else path.lstrip('/')
         rel = path[len(prefix) + 1:] if prefix and path.startswith(prefix + '/') else path.lstrip('/')
         found = existing(rel)
         # A relative URL which already resolves correctly needs no change.
