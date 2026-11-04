@@ -1,0 +1,43 @@
+{{/* 이름 버튼(탭)을 눌러 사진을 바꿔 보는 상자 */}}
+{{- $id := printf "tabs-%d" .Ordinal -}}
+<div class="img-tabs" id="{{ $id }}">
+  <div class="img-tabs__list" role="tablist" aria-label="실습 화면 선택"></div>
+  {{ .Inner }}
+</div>
+<script>
+(function () {
+  var root = document.getElementById("{{ $id }}");
+  if (!root) return;
+  var list = root.querySelector(".img-tabs__list");
+  var panels = root.querySelectorAll(".img-tabs__panel");
+  var buttons = [];
+  panels.forEach(function (panel, i) {
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "img-tabs__btn";
+    btn.textContent = panel.dataset.label;
+    btn.setAttribute("role", "tab");
+    btn.id = "{{ $id }}-tab-" + i;
+    panel.id = "{{ $id }}-panel-" + i;
+    panel.setAttribute("role", "tabpanel");
+    panel.setAttribute("aria-labelledby", btn.id);
+    btn.setAttribute("aria-controls", panel.id);
+    btn.addEventListener("click", function () { show(i); });
+    btn.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowRight") { show((i + 1) % panels.length, true); }
+      if (e.key === "ArrowLeft") { show((i - 1 + panels.length) % panels.length, true); }
+    });
+    list.appendChild(btn);
+    buttons.push(btn);
+  });
+  function show(n, focus) {
+    buttons.forEach(function (b, i) {
+      b.setAttribute("aria-selected", i === n ? "true" : "false");
+      b.tabIndex = i === n ? 0 : -1;
+      panels[i].hidden = i !== n;
+    });
+    if (focus) buttons[n].focus();
+  }
+  show(0);
+})();
+</script>

@@ -1,0 +1,8 @@
+{{- $src := .Get "src" -}}
+{{- if not (hasPrefix $src "http") }}{{ $src = strings.TrimPrefix "/" $src | relURL }}{{ end -}}
+<figure class="img-tabs__panel" data-label="{{ .Get "label" }}">
+  <a href="{{ $src }}" target="_blank" rel="noopener">
+    <img src="{{ $src }}" alt="{{ .Get "alt" }}" loading="lazy">
+  </a>
+  <figcaption>{{ .Get "alt" }} · 누르면 크게 볼 수 있어요</figcaption>
+</figure>
