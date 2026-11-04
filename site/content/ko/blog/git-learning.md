@@ -1,7 +1,7 @@
 ---
 title: "Git 기본 명령 정리"
 description: "수업에서 배운 Git 흐름과 사이트를 만들며 헷갈렸던 것"
-date: 2026-10-21
+date: 2026-10-01   
 tags: ["Git"]
 ---
 

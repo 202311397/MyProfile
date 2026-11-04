@@ -1,7 +1,7 @@
 ---
 title: "Vue 프로젝트 배포: 수동 빌드와 자동 배포 비교"
 description: "같은 프로젝트를 두 방식으로 배포해 보며 알게 된 차이"
-date: 2026-10-05
+date: 2026-10-13
 tags: ["Vue", "GitHub Pages"]
 ---
 
