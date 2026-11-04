@@ -53,3 +53,19 @@ background: #faf7f0;
     white-space: normal;
 }
 }
+
+/* 사진을 옆으로 넘기는 슬라이드 */
+.prose p:has(> img + img) {
+display: flex;
+gap: 1rem;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+padding-bottom: .5rem;
+}
+.prose p:has(> img + img) > img {
+flex: 0 0 100%;
+width: 100%;
+scroll-snap-align: start;
+border: 1px solid #e2ddd3;
+border-radius: 8px;
+}

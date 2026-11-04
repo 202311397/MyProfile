@@ -29,13 +29,10 @@ status: "진행 중"
 
 ## 산출물과 결과 설명
 
-![ERP 사업장 등록 화면](/images/erp-business.png)
-
+![ERP 회사 및 사업장 등록 화면](/images/erp-business.png)
 ![ERP 품목 등록 화면](/images/erp-items.png)
-
-![ERP BOM 등록 화면](/images/erp-bom.png)
-
-![ERP 수금 처리 화면](/images/erp-receipt.png)
+![ERP BOM 정전개 화면](/images/erp-bom.png)
+![ERP 수금 회계처리 화면](/images/erp-receipt.png)
 
 기준정보를 먼저 등록해 두면 이후 영업·구매·생산 업무를 처리할 때 그 정보를 불러와 쓰고 처리 결과가 회계까지 이어짐.
 
