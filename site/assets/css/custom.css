@@ -54,18 +54,47 @@ background: #faf7f0;
 }
 }
 
-/* 사진을 옆으로 넘기는 슬라이드 */
-.prose p:has(> img + img) {
-display: flex;
-gap: 1rem;
-overflow-x: auto;
-scroll-snap-type: x mandatory;
-padding-bottom: .5rem;
+/* 이름 버튼(탭)으로 사진 바꿔 보기 */
+.img-tabs {
+max-width: 720px;
+margin: 1.5rem auto;
 }
-.prose p:has(> img + img) > img {
-flex: 0 0 100%;
+.img-tabs__list {
+display: flex;
+flex-wrap: wrap;
+gap: .5rem;
+margin-bottom: .75rem;
+}
+.img-tabs__btn {
+padding: .5rem 1rem;
+border: 1px solid var(--green, #3b5c45);
+border-radius: 999px;
+background: #fff;
+color: var(--green, #3b5c45);
+font-size: .9rem;
+cursor: pointer;
+}
+.img-tabs__btn:hover {
+background: var(--green-pale, #e8f0ea);
+}
+.img-tabs__btn[aria-selected="true"] {
+background: var(--green, #3b5c45);
+color: #fff;
+font-weight: 600;
+}
+.img-tabs__panel {
+margin: 0;
+}
+.img-tabs__panel img {
+display: block;
 width: 100%;
-scroll-snap-align: start;
+height: auto;
 border: 1px solid #e2ddd3;
 border-radius: 8px;
+}
+.img-tabs__panel figcaption {
+margin-top: .5rem;
+font-size: .85rem;
+text-align: center;
+color: var(--text-muted, #6b6b6b);
 }
