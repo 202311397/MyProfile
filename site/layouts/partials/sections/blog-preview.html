@@ -23,7 +23,7 @@
     <div class="blog-preview__grid">
       {{- range $i, $post := $posts }}
         {{- $isFeatured := eq $i 0 -}}
-        <article class="blog-preview__card{{ if $isFeatured }} blog-preview__card--featured{{ end }} animate-fade-up delay-{{ add $i 1 }}">
+        <article class="blog-preview__card animate-fade-up delay-{{ add $i 1 }}">
           {{/* Post image */}}
           {{- with $post.Params.image }}
             <a href="{{ $post.RelPermalink }}" class="blog-preview__image-link">
