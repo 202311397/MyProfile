@@ -15,7 +15,19 @@ sections:
     cta_secondary:
       text: "활동 보기"
       url: "/gallery/"
-    image: "/images/profile.jpg"
+    interval: 5
+    images:
+      - src: "/images/mycharacter.jpg"
+        alt: "나의 캐릭터"
+      - src: "/images/sky.jpg"
+        alt: "밤하늘"
+      - src: "/images/book.jpg"
+        alt: "좋아하는 책"
+      - src: "/images/bali.jpg"
+        alt: "발리 여행"
+      - src: "/images/language-training.jpg"
+        alt: "필리핀 어학연수"
+
 
   - type: services
     enabled: true
