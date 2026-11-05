@@ -103,3 +103,49 @@ color: var(--text-muted, #6b6b6b);
 .blog-post__hero {
 display: none;
 }
+
+/* 홈 첫 화면: 제목이 글자 중간에서 끊기지 않게 하기 */
+.hero__heading {
+word-break: keep-all;
+}
+
+/* 홈 첫 화면: 사진 자동 슬라이드 */
+.hero__media {
+width: 100%;
+}
+.hero-show {
+width: 100%;
+position: relative;
+aspect-ratio: 4 / 3;
+border-radius: var(--radius-lg, 12px);
+overflow: hidden;
+background: #fff;
+}
+.hero-show__img {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: contain;
+opacity: 0;
+transition: opacity 1s ease;
+}
+.hero-show__img.is-active {
+opacity: 1;
+}
+.hero-show__toggle {
+position: absolute;
+right: .75rem;
+bottom: .75rem;
+width: 2.25rem;
+height: 2.25rem;
+border: 0;
+border-radius: 50%;
+background: rgba(59, 92, 69, .85);
+color: #fff;
+font-size: .8rem;
+cursor: pointer;
+}
+@media (prefers-reduced-motion: reduce) {
+.hero-show__img { transition: none; }
+}

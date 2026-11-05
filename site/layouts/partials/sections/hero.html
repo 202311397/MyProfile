@@ -1,0 +1,79 @@
+{{- $s := .section -}}
+
+<section class="hero section">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__content">
+        {{- with $s.eyebrow }}
+          <span class="section-label animate-fade-up">{{ . }}</span>
+        {{- end }}
+
+        {{- with $s.heading }}
+          <h1 class="hero__heading animate-fade-up delay-1">
+            {{- if $s.heading_italic -}}
+              {{ replace . $s.heading_italic (printf "<em>%s</em>" $s.heading_italic) | safeHTML }}
+            {{- else -}}
+              {{ . }}
+            {{- end -}}
+          </h1>
+        {{- end }}
+
+        {{- with $s.description }}
+          <p class="hero__description animate-fade-up delay-2">{{ . }}</p>
+        {{- end }}
+
+        <div class="hero__cta animate-fade-up delay-3">
+          {{- with $s.cta_primary }}
+            <a href="{{ partial "url.html" .url | safeURL }}" class="btn btn-primary">{{ .text }}</a>
+          {{- end }}
+          {{- with $s.cta_secondary }}
+            <a href="{{ partial "url.html" .url | safeURL }}" class="btn btn-outline">{{ .text }}</a>
+          {{- end }}
+        </div>
+      </div>
+
+      <div class="hero__media animate-fade-up delay-2">
+        {{- if $s.images }}
+          <div class="hero-show" data-interval="{{ $s.interval | default 4 }}">
+            {{- range $i, $img := $s.images }}
+              {{- $src := strings.TrimPrefix "/" $img.src -}}
+              {{- $url := "" -}}
+              {{- with resources.Get $src }}{{ $url = .RelPermalink }}{{ else }}{{ $url = $src | relURL }}{{ end -}}
+              <img class="hero-show__img{{ if eq $i 0 }} is-active{{ end }}" src="{{ $url }}" alt="{{ $img.alt }}" loading="{{ if eq $i 0 }}eager{{ else }}lazy{{ end }}">
+            {{- end }}
+            <button type="button" class="hero-show__toggle" aria-label="슬라이드 일시정지">❚❚</button>
+          </div>
+          <script>
+          (function () {
+            var box = document.currentScript.previousElementSibling;
+            var imgs = box.querySelectorAll(".hero-show__img");
+            var btn = box.querySelector(".hero-show__toggle");
+            var sec = Number(box.dataset.interval) || 4;
+            var n = 0, timer = null;
+            function next() {
+              imgs[n].classList.remove("is-active");
+              n = (n + 1) % imgs.length;
+              imgs[n].classList.add("is-active");
+            }
+            function play() { timer = setInterval(next, sec * 1000); btn.textContent = "❚❚"; btn.setAttribute("aria-label", "슬라이드 일시정지"); }
+            function stop() { clearInterval(timer); timer = null; btn.textContent = "▶"; btn.setAttribute("aria-label", "슬라이드 재생"); }
+            btn.addEventListener("click", function () { timer ? stop() : play(); });
+            if (imgs.length > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) { play(); } else { stop(); }
+          })();
+          </script>
+        {{- else if $s.image }}
+          {{- partial "image.html" (dict
+            "src" $s.image
+            "alt" ($s.heading | default "Hero")
+            "class" "hero__image"
+            "loading" "eager"
+            "sizes" "(min-width: 1024px) 50vw, 100vw"
+            "widths" (slice 600 900 1200 1600)
+            "fit" ($s.imageFit | default "resize")
+            "aspectRatio" ($s.imageAspectRatio | default "")
+          ) -}}
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>
