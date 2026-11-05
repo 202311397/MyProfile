@@ -2,6 +2,7 @@
 title: "GitHub Actions 빌드 실패 해결"
 description: "YAML 한 줄 오류로 배포가 멈췄을 때 로그로 원인을 찾은 과정"
 date: 2026-11-02
+image: "/images/blog/actions-error.png"
 tags: ["GitHub Actions", "Hugo"]
 ---
 

@@ -2,6 +2,7 @@
 title: "Firebase 환경변수 설정하기"
 description: ".env.local 파일과 GitHub Repository Secrets를 이용한 Firebase 환경변수 관리 및 배포 오류 해결"
 date: 2026-10-16
+image: "/images/blog/firebase-secrets.png"
 tags: ["React", "Firebase", "GitHub Actions"]
 ---
 
