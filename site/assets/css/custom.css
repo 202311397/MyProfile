@@ -98,3 +98,8 @@ font-size: .85rem;
 text-align: center;
 color: var(--text-muted, #6b6b6b);
 }
+
+/* 학습 기록: 썸네일은 목록에만*/
+.blog-post__hero {
+display: none;
+}
