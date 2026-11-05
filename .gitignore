@@ -42,3 +42,5 @@ docs/*
 **/resources/_gen/
 **/.hugo_build.lock
 /.github-pages-setup-backups/
+/site/public/
+/site/.hugo_build.lock
