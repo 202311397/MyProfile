@@ -62,7 +62,7 @@ hugo server --source site
 | 자료 | 출처 | 구분 |
 |---|---|---|
 | 테마 | [Localcraft](https://github.com/maciejkosiarski/localcraft) by maciejkosiarski, MIT License (`LICENSE` 유지) | 외부 |
-| 캐릭터 그림 `site/assets/images/mycharacter.jpg` | ★ 직접 제작 / AI 생성(도구 이름) | ★ |
+| 캐릭터 그림 `site/assets/images/mycharacter.jpg` | AI 생성 | AI 도움 |
 | 홈 슬라이드 사진 `sky.jpg`, `book.jpg`, `bali.jpg` | 직접 촬영 | 직접 제작 |
 | 홈 슬라이드 사진 `language-training.jpg` | 직접 촬영, 함께 찍힌 친구에게 게시 동의 받음 | 직접 제작 |
 | ERP·학습 기록 캡처 `site/static/images/` | 직접 캡처 (사용자 이름 등 개인정보 가림) | 직접 제작 |
