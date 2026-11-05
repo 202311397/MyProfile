@@ -57,7 +57,7 @@
             {{/* Meta info */}}
             <div class="blog-preview__meta">
               <time datetime="{{ $post.Date.Format "2006-01-02" }}">
-                {{ $post.Date.Format "2 January 2006" }}
+                {{ $post.Date | time.Format ":date_medium" }}
               </time>
               <span class="blog-preview__separator" aria-hidden="true">&bull;</span>
               {{- $readingTime := math.Max 1 (div $post.WordCount 200) -}}
