@@ -49,4 +49,4 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemap
-Sitemap: https://snipsnip.pl/sitemap.xml
+Sitemap: https://202311397.github.io/MyProfile/sitemap.xml
