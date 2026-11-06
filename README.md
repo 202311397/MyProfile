@@ -20,6 +20,14 @@ hugo server --source site
 
 브라우저에서 http://localhost:1313/MyProfile/ 을 엽니다.
 
+## 빌드
+
+```bash
+hugo --source site
+```
+
+결과는 `site/public/`에 생성됩니다. 배포는 GitHub Actions가 자동으로 합니다.
+
 ## 수정하는 파일 위치
 
 | 바꿀 것 | 파일 |
@@ -62,7 +70,7 @@ hugo server --source site
 | 자료 | 출처 | 구분 |
 |---|---|---|
 | 테마 | [Localcraft](https://github.com/maciejkosiarski/localcraft) by maciejkosiarski, MIT License (`LICENSE` 유지) | 외부 |
-| 캐릭터 그림 `site/assets/images/mycharacter.jpg` | AI 생성 | AI 도움 |
+| 캐릭터 그림 `site/assets/images/mycharacter.jpg` | AI 생성 | AI 생성 |
 | 홈 슬라이드 사진 `sky.jpg`, `book.jpg`, `bali.jpg` | 직접 촬영 | 직접 제작 |
 | 홈 슬라이드 사진 `language-training.jpg` | 직접 촬영, 함께 찍힌 친구에게 게시 동의 받음 | 직접 제작 |
 | ERP·학습 기록 캡처 `site/static/images/` | 직접 캡처 (사용자 이름 등 개인정보 가림) | 직접 제작 |
