@@ -27,7 +27,7 @@ tags: ["Git"]
 | `git status` | 무엇이 바뀌었고 무엇이 stage에 있는지 확인 |
 | `git add .` | 바뀐 파일을 전부 stage에 올림 |
 | `git commit -m "메시지"` | stage에 있는 것을 기록으로 저장 |
-| `git push origin main` | 기록을 GitHub의 main 브랜치에 올람 |
+| `git push origin main` | 기록을 GitHub의 main 브랜치에 올림 |
 | `git log` | 커밋 기록 확인 |
 | `git show` | 커밋 하나의 자세한 변경 내용 |
 
