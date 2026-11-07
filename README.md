@@ -12,6 +12,11 @@
 - 테마: Localcraft (`site/themes/template/`)
 - GitHub Actions + GitHub Pages (main 브랜치에 push하면 자동 배포)
 
+## 설치
+
+- Hugo 0.167.0 extended, Git 설치 후 저장소를 내려받습니다.
+  `git clone https://github.com/202311397/MyProfile.git`
+
 ## 로컬에서 실행
 
 ```bash
